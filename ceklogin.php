@@ -13,14 +13,14 @@ if(isset($_POST['email']) && isset($_POST['password'])) {
         echo '<meta http-equiv="refresh" content="2; url=./index.php"/>';
         echo "<center><h1>Berhasil, dalam 2 detik kamu akan dialihkan ke halaman utama</h1></center>";
     } elseif($_POST['email'] != $email && $_POST['password'] == $password) {
-        echo "<center><h1>Gagal!, Email Salah</h1></center>";
+        echo "<center><h1>Gagal!, Email Salah</h1></center><br/><a href="./login.php">Login</a>";
     } elseif($_POST['email'] == $email && $_POST['password'] != $password) {
-        echo "<center><h1>Gagal!, Password Salah</h1></center>";
+        echo "<center><h1>Gagal!, Password Salah</h1></center><br/><a href="./login.php">Login</a>";
     } elseif($_POST['email'] != $email && $_POST['password'] != $password) {
-        echo "<center><h1>Gagal!, Email & Password Salah</h1></center>";
+        echo "<center><h1>Gagal!, Email & Password Salah</h1></center><br/><a href="./login.php">Login</a>";
     } 
 } else {
-    echo "<center><h1>Gagal!, jangan biarkan email & password kosong</h1></center>";
+    echo "<center><h1>Gagal!, jangan biarkan email & password kosong</h1></center><br/><a href="./login.php">Login</a>";
 }
 }
 ?>
