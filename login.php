@@ -10,6 +10,6 @@ if(isset($_SESSION['email'])) {
 <input type="password" name="password" placeholder="Password" alt="password" required="required"/><br/><br/>
 <input type="submit" name="submit" value="Submit" alt="submit"/>
 </form><br/>
-<h4>Copyright &copy; <font color="red" alt="inwepo.co">inwepo.co</font> & <font color="red" alt="Faraaz">Faraaz</font></h4>
+<h4>Copyright &copy; <font color="red" alt="inwepo.co">https://amirsantoso.herokuapp.com/</font> & <font color="red" alt="amirsantoso">Amir Santoso</font></h4>
 </center>
 <?php } ?>
