@@ -3,8 +3,8 @@ session_start();
 if(isset($_SESSION['email'])) {
     echo '<script>window.location.replace("./index.php");</script>';
 } else {
-$email = "admin@email.co";
-$password = "123456";
+$email = "amir.santosos@gmail.com";
+$password = "A177irs1m918@123";
 if(isset($_POST['email']) && isset($_POST['password'])) {
     if($_POST['email'] == $email && $_POST['password'] == $password) {
         session_start();
