@@ -17,7 +17,7 @@ if(isset($_POST['email']) && isset($_POST['password'])) {
     } elseif($_POST['email'] == $email && $_POST['password'] != $password) {
         echo "<center><h1>Gagal!, Password Salah</h1></center>";
     } elseif($_POST['email'] != $email && $_POST['password'] != $password) {
-        echo "<center><h1>Gagal!, Email & Password Salah</h1></center> <a href="./logout.php">Logout</a>";
+        echo "<center><h1>Gagal!, Email & Password Salah</h1></center> <a href="./login.php">Login</a>";
     } 
 } else {
     echo "<center><h1>Gagal!, jangan biarkan email & password kosong</h1></center>";
