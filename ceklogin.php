@@ -21,6 +21,8 @@ if(isset($_POST['email']) && isset($_POST['password'])) {
     } 
 } else {
     echo "<center><h1>Gagal!, jangan biarkan email & password kosong</h1></center>";
+    
+     echo '<script>window.location.replace("./login.php");</script>';
 }
 }
 ?>
