@@ -23,5 +23,4 @@ if(isset($_POST['email']) && isset($_POST['password'])) {
     echo "<center><h1>Gagal!, jangan biarkan email & password kosong</h1></center>";
 }
 }
-<br/><a href="./login.php">Login</a>
 ?>
