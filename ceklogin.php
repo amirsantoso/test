@@ -17,13 +17,10 @@ if(isset($_POST['email']) && isset($_POST['password'])) {
     } elseif($_POST['email'] == $email && $_POST['password'] != $password) {
         echo "<center><h1>Gagal!, Password Salah</h1></center>";
     } elseif($_POST['email'] != $email && $_POST['password'] != $password) {
-        echo "<center><h1>Gagal!, Email & Password Salah</h1></center>";
-        echo '<script>window.location.replace("./login.php");</script>';
+        echo "<center><h1>Gagal!, Email & Password Salah</h1></center> <a href="./logout.php">Logout</a>";
     } 
 } else {
     echo "<center><h1>Gagal!, jangan biarkan email & password kosong</h1></center>";
-    
-     echo '<script>window.location.replace("./login.php");</script>';
 }
 }
 ?>
